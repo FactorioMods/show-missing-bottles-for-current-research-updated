@@ -1,8 +1,0 @@
--- log('these items still have spoil ticks defined:')
--- for _, prototypes in pairs(data.raw) do
---   for _, prototype in pairs(prototypes) do
---     if prototype.spoil_ticks ~= nil then
---       log(prototype.type .. ':' .. prototype.name)
---     end
---   end
--- end

@@ -1,6 +1,0 @@
-hue - chroma:
-chroma -30
-
-color temperature:
-6500
-6000
