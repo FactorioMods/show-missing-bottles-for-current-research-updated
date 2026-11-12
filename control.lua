@@ -1,3 +1,4 @@
+local legacy_import = require("legacy_import")
 local util = require("util")
 
 local Flasks = {}
@@ -7,6 +8,7 @@ Flasks.window_name = "show_missing_bottles_for_current_research_window"
 Flasks.label_name  = "show_missing_bottles_for_current_research_label"
 
 local function on_configuration_changed(event)
+  legacy_import.adopt("show-missing-bottles-for-current-research")
   storage.lab_inputs = {}
   for _, entity_prototype in pairs(prototypes.get_entity_filtered({{filter = "type", type = "lab"}})) do
     storage.lab_inputs[entity_prototype.name] = util.list_to_map(entity_prototype.lab_inputs)
@@ -31,6 +33,7 @@ local function on_created_entity(event)
 end
 
 script.on_init(function(event)
+  if legacy_import.adopt("show-missing-bottles-for-current-research") then on_configuration_changed(); return end
   storage.structs = {}
 
   on_configuration_changed()

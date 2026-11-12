@@ -1,8 +1,8 @@
 ---------------------------------------------------------------------------------------------------
-Version: 2.0.2
-Date: 2025. 02. 11
-  Info:
-    - Fix non normal qualities reporting as missing
+Version: 1.0.0
+Date: 2026-11-12
+  Changes:
+    - This fork supports Factorio 2.1.24 and continuing games that used the original research display. The display does not locate individual labs or exclude every lab that cannot perform the selected research.
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.1
 Date: 2025. 01. 21

@@ -1,10 +1,15 @@
 {
-    "name": "show-missing-bottles-for-current-research",
-    "title": "Show missing bottles for current research",
-    "description": "Research-kun why are you stuck?",
-    "version": "2.0.2",
-    "author": "Quezler",
-    "factorio_version": "2.0",
-    "dependencies": [
-    ]
+  "name": "show-missing-bottles-for-current-research-updated",
+  "title": "Show missing bottles for current research: Updated",
+  "description": "Factorio 2.1 compatibility fork of show-missing-bottles-for-current-research. Research-kun why are you stuck?",
+  "version": "1.0.0",
+  "author": "Quezler; FactorioMods (Factorio 2.1 port)",
+  "factorio_version": "2.1",
+  "dependencies": [
+    "base >= 2.1.24",
+    "! show-missing-bottles-for-current-research"
+  ],
+  "migrates_from": [
+    "show-missing-bottles-for-current-research"
+  ]
 }
